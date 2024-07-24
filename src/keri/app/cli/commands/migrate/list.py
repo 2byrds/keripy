@@ -25,7 +25,7 @@ def handler(args):
     return [lister]
 
 
-parser = argparse.ArgumentParser(description='Cleans and migrates a database and keystore')
+parser = argparse.ArgumentParser(description='Lists database and keystore mirgrations')
 parser.set_defaults(handler=handler,
                     transferable=True)
 

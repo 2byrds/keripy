@@ -18,7 +18,7 @@ logger = help.ogler.getLogger()
 
 def handler(args):
     """
-    Launch KERI database initialization
+    Launch KERI database migration
 
     Args:
         args(Namespace): arguments object from command line
@@ -27,7 +27,7 @@ def handler(args):
     return [clean]
 
 
-parser = argparse.ArgumentParser(description='Cleans and migrates a database and keystore')
+parser = argparse.ArgumentParser(description='migrates a database and keystore')
 parser.set_defaults(handler=handler,
                     transferable=True)
 
